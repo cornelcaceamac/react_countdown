@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-image: linear-gradient(to right, #e9d362 , #19102d);
+}
+
+.App-header {
+  background-color: #19102d;
+  padding: 20px;
+  color: white;
+}
+
+p {
+  font-family: serif;
+  font-style: italic;
+}
+
+.App-header p {
+  font-size: 70px;
+  color:#e9d362;
+}
+
+main p {
+  font-size: 30px;
+  color:#000;
+  padding-top: 10px;
+}
+
+
+.Countdown{
+  margin: 10px auto;
+  padding-bottom: 20px;
+  color: #0b4a0b;
+  animation-name: pulseCountdown;
+  animation-duration: 3s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.Countdown-col{
+  display: inline-block;
+}
+
+.Countdown-col-element{
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong{
+  font-size: 50px;
+}
+
+input[type=text]{
+    width: 75%;
+    padding: 20px;
+    border: 5px solid #19102d;
+    border-radius: 20px;
+    text-align: center;
+    font-family: serif;
+    font-size: 25px;
+    color:#000;
+}
+
+.errorClass {
+  color: #b1102d;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.CountdownPanic{
+  margin: 10px auto;
+  padding-bottom: 20px;
+  color: #b1102d;
+  animation-name: pulseCountdownPanic;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes pulseCountdownPanic {
+  0% {
+    transform: scale(.7);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes pulseCountdown {
+  0% {
+    transform: scale(.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
